@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MKV Video Player</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #222;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin: 20px 0;
+            font-size: 24px;
+        }
+        .video-container {
+            position: relative;
+            width: 90%;
+            max-width: 1080px;
+            margin: 0 auto;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            border: 4px solid white;
+            border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 20px;
+            }
+            .video-container {
+                width: 100%;
+            }
+            video {
+                border-radius: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Watch My MKV Video</h1>
+    <div class="video-container">
+        <video controls>
+            <source src="https://drive.google.com/uc?export=download&id=18wVpLfeLndDH8PhuAuzr7DTZ2hP561bP" type="video/x-matroska">
+            Your browser does not support MKV videos. Try using Chrome or download the video below.
+        </video>
+        <p><a href="https://drive.google.com/uc?export=download&id=18wVpLfeLndDH8PhuAuzr7DTZ2hP561bP" download>Download Video</a></p>
+    </div>
+</body>
+</html>
